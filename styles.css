@@ -41,7 +41,17 @@ nav a:hover { color: var(--teal); }
 .btn-primary:hover { background: var(--teal-dark); }
 .btn-outline { border-color: var(--line); color: var(--ink); background: #fff; }
 .btn-outline:hover { border-color: var(--teal); color: var(--teal-dark); }
-@media (max-width: 880px) { nav a:not(.btn) { display: none; } }
+nav a[aria-current="page"] { color: var(--teal-dark); font-weight: 700; }
+@media (max-width: 880px) {
+  /* keep every link reachable on phones: the menu drops to its own scrollable row */
+  html { scroll-padding-top: 120px; }
+  .nav-inner { height: auto; flex-wrap: wrap; position: relative; padding-top: 10px; padding-bottom: 8px; }
+  nav { width: 100%; display: flex; align-items: center; gap: 11px; overflow-x: auto; white-space: nowrap; padding: 6px 0 4px; scrollbar-width: none; }
+  nav::-webkit-scrollbar { display: none; }
+  nav a { margin-left: 0; font-size: .86rem; flex: none; }
+  /* the call-to-action button sits on the logo row so it is never scrolled out of sight */
+  .btn-small { position: absolute; top: 12px; right: 22px; margin-left: 0; }
+}
 
 /* hero */
 .hero { padding: 64px 0 28px; background: linear-gradient(180deg, #f3faf9 0%, #ffffff 78%); overflow: hidden; }
@@ -174,3 +184,77 @@ nav a:hover { color: var(--teal); }
 
 .footer { border-top: 1px solid var(--line); padding: 26px 0; font-size: .92rem; color: var(--muted); }
 .footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+
+/* ---------- multi-page additions ---------- */
+.step .ic { font-size: 20px; stroke-width: 2; }
+.figcap { margin: 14px 0 0; font-size: .8rem; color: #8a9aa1; text-align: center; }
+
+/* home: two product windows side by side */
+.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; max-width: 980px; margin: 46px auto 0; }
+.duo .window { margin: 0; max-width: none; }
+.kpis.two { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 860px) { .duo { grid-template-columns: 1fr; } }
+.panels.two { grid-template-columns: 1.1fr 1fr; }
+@media (max-width: 860px) { .panels.two { grid-template-columns: 1fr; } }
+
+/* home: the two worlds */
+.worlds { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+@media (max-width: 860px) { .worlds { grid-template-columns: 1fr; } }
+.world { border-radius: 24px; padding: 36px; border: 1px solid var(--line); }
+.world h3 { font-size: 1.7rem; margin: .1em 0 .4em; }
+.world p { color: var(--muted); }
+.w-business { background: var(--mint); }
+.w-life { background: var(--sand); }
+.world .iconbox { margin-bottom: 14px; background: #fff; }
+.wtag { text-transform: uppercase; letter-spacing: .12em; font-size: .75rem; font-weight: 700; color: var(--teal-dark); margin: 0 0 .3rem; }
+.world .btn { margin-top: .4rem; }
+.more { text-align: center; margin: 28px 0 0; color: var(--muted); }
+.more .ic { color: var(--teal); vertical-align: -2px; }
+
+/* products page */
+.phero { padding: 64px 0 24px; background: linear-gradient(180deg, #f3faf9 0%, #ffffff 100%); }
+.phero h1 { margin: .2em auto .3em; max-width: 14em; }
+.phero .lead { margin-bottom: 0; }
+.pcards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+@media (max-width: 1000px) { .pcards { grid-template-columns: 1fr; max-width: 640px; margin: 0 auto; } }
+.pcard { background: #fff; border: 1px solid var(--line); border-radius: 22px; padding: 30px; display: flex; flex-direction: column; transition: box-shadow .15s, transform .15s; }
+.pcard:hover { box-shadow: 0 16px 34px rgba(18,48,58,.09); transform: translateY(-2px); }
+.pcard h2 { font-size: 1.7rem; margin: 0 0 .15em; }
+.pcard p { color: var(--muted); font-size: 1rem; }
+.pcard .ptag { color: var(--ink); font-weight: 650; margin-bottom: .6em; }
+.pcard .list { margin: .6rem 0 1.4rem; }
+.pcard .btn { margin-top: auto; align-self: flex-start; }
+.pcard.soon { background: var(--soft); border-style: dashed; }
+.ptop { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.badge { font-size: .74rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: .3rem .75rem; border-radius: 999px; }
+.b-test { background: #dfeafa; color: #2457a3; }
+.b-dev { background: #fdf0d6; color: #8a5a0a; }
+.b-soon { background: #eceff0; color: #526771; }
+.b-live { background: #e4f4df; color: #2f7a20; }
+
+/* TheRunnersGuru page */
+.hero-run { background: linear-gradient(180deg, #fdf8ee 0%, #ffffff 80%); }
+.dot-amber { background: var(--amber) !important; }
+table.plantable { width: 100%; border-collapse: collapse; font-size: .8rem; text-align: left; }
+table.plantable th { font-weight: 600; color: var(--muted); font-size: .72rem; padding: 4px 6px 8px; border-bottom: 1px solid var(--line); }
+table.plantable td { padding: 8px 6px; border-bottom: 1px solid #eef2f3; }
+table.plantable td.ok { color: #1d7a3d; font-weight: 700; }
+.wx { margin: 12px 0 0; font-size: .8rem; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+.wx .ic { color: var(--teal); font-size: 1.1rem; }
+.mini { width: 100%; height: auto; display: block; }
+.band { background: var(--teal); color: #fff; padding: 44px 0; margin-top: 40px; }
+.cta-panel .btn { margin-top: .4rem; }
+
+.flinks { display: flex; gap: 18px; flex-wrap: wrap; }
+.flinks a { color: var(--muted); text-decoration: none; }
+.flinks a:hover { color: var(--teal-dark); }
+.band .btn-primary { background: var(--amber); color: #0b2530; box-shadow: none; }
+.band .btn-primary:hover { background: #f5b955; }
+
+/* biometric fueling project */
+.lead-sm { font-size: 1.15rem; font-weight: 650; color: var(--ink) !important; margin-bottom: .6em; }
+.tight-top { margin-top: 2.2rem; }
+.safety-h { margin: 2.2rem 0 .6rem; }
+.safety { margin: 0 0 1.4rem; }
+.fuel-status { color: var(--muted); }
+.fuel-note { background: #fff; border-left: 4px solid var(--amber); border-radius: 0 12px 12px 0; padding: 12px 16px; margin: 1rem 0 0; color: var(--ink); }

@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>The Runners Guru | D4Nepal</title>
+  <meta name="description" content="The Runners Guru helps runners of every distance train smarter and race with confidence: ultra race planning, a Crew Companion plan, training plans and a GPX route library.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230F8B8D'/%3E%3Cpath d='M5 25 11 11l5 9 3-5 8 10z' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html" aria-label="D4Nepal home">
+      <svg viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0f8b8d"/><path d="M5 25 11 11l5 9 3-5 8 10z" fill="#fff"/></svg>
+      <span>D4Nepal</span>
+    </a>
+    <nav aria-label="Main">
+      <a href="products.html">Products</a>
+      <a href="smb-insights.html">SMB Insights</a>
+      <a href="the-runners-guru.html" aria-current="page">The Runners Guru</a>
+      <a href="index.html#who">About</a>
+      <a class="btn btn-small" href="index.html#contact">Early access</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero hero-run">
+    <div class="wrap center">
+      <p class="pill"><span class="dot"></span> Free to join &middot; in testing</p>
+      <h1>Your next mile <span class="hl">starts here.</span></h1>
+      <p class="lead">Intelligent training plans built around you, whether it is your first 5K or your next 300-mile ultra. Pick your distance, upload your route, and let AI handle the rest. Built by a runner, for runners, and tested live at the 2026 Moab 240.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://nepapower.github.io/TheRunnersGuru/" rel="noopener">Try it free</a>
+        <a class="btn btn-outline" href="#inside">See what is inside</a>
+      </div>
+      <ul class="ticks">
+        <li><svg class="ic"><use href="icons.svg#i-check"/></svg> 5K to 300+ miles</li>
+        <li><svg class="ic"><use href="icons.svg#i-check"/></svg> Free, no card required</li>
+        <li><svg class="ic"><use href="icons.svg#i-check"/></svg> Built around your race</li>
+      </ul>
+    </div>
+    <div class="wrap">
+      <figure class="stage" aria-label="Illustration of a The Runners Guru race plan, using sample numbers">
+        <div class="window">
+          <div class="window-bar"><i></i><i></i><i></i><span>The Runners Guru &middot; Race plan</span></div>
+          <div class="window-body">
+            <div class="panels two">
+              <div class="panel">
+                <h4>Course and aid stations</h4>
+                <svg viewBox="0 0 400 210" class="mini" role="img" aria-label="Illustration of a race profile with aid stations">
+              <path d="M10 170 L10 140 C40 130 60 90 95 100 S150 150 185 120 S245 50 285 70 S350 130 390 110 L390 170 Z" fill="#cfe5e6"/>
+              <path d="M10 140 C40 130 60 90 95 100 S150 150 185 120 S245 50 285 70 S350 130 390 110" fill="none" stroke="#0f8b8d" stroke-width="3" stroke-linecap="round"/>
+              <line x1="10" y1="170" x2="390" y2="170" stroke="#dbe4e6"/>
+              <g fill="#f2a93b"><path d="M95 100V76l16 6-16 6z"/><path d="M185 120V96l16 6-16 6z"/><path d="M285 70V46l16 6-16 6z"/></g>
+              <g stroke="#f2a93b" stroke-width="2"><line x1="95" y1="100" x2="95" y2="76"/><line x1="185" y1="120" x2="185" y2="96"/><line x1="285" y1="70" x2="285" y2="46"/></g>
+              <g font-size="10" fill="#526771" text-anchor="middle"><text x="95" y="186">Aid 1</text><text x="185" y="186">Aid 2</text><text x="285" y="186">Aid 3</text></g>
+              <rect x="10" y="8" width="170" height="24" rx="12" fill="#e3f5ea"/>
+              <text x="95" y="24" font-size="11" text-anchor="middle" font-weight="700" fill="#1d7a3d">Ahead of cutoff by 1h 40m</text>
+              <rect x="226" y="8" width="164" height="24" rx="12" fill="#dfeafa"/>
+              <text x="308" y="24" font-size="11" text-anchor="middle" font-weight="700" fill="#2457a3">Crew plan shared</text>
+            </svg>
+              </div>
+              <div class="panel">
+                <h4>Your plan against the cutoffs</h4>
+                <table class="plantable">
+                  <thead><tr><th>Aid station</th><th>Your ETA</th><th>Cutoff</th><th>Buffer</th></tr></thead>
+                  <tbody>
+                    <tr><td>Aid 1</td><td>09:10</td><td>10:30</td><td class="ok">+1h 20m</td></tr>
+                    <tr><td>Aid 2</td><td>12:05</td><td>13:45</td><td class="ok">+1h 40m</td></tr>
+                    <tr><td>Aid 3</td><td>16:20</td><td>17:45</td><td class="ok">+1h 25m</td></tr>
+                  </tbody>
+                </table>
+                <p class="wx"><svg class="ic"><use href="icons.svg#i-cloud"/></svg> Weather folded into your pacing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <figcaption>Example: an ultra race plan, with sample numbers.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="inside" class="section tight">
+    <div class="wrap">
+      <div class="center head">
+        <p class="eyebrow">What is inside</p>
+        <h2>Everything you need between now and race day.</h2>
+        <p class="sub">Training, fueling, hydration, gear, strength and community, in one place, for every runner and every distance.</p>
+      </div>
+      <div class="fcards">
+          <article class="card feat">
+            <span class="iconbox c2"><svg class="ic"><use href="icons.svg#i-calendar"/></svg></span>
+            <h3>A plan for your distance</h3>
+            <p class="does">From your first 5K to a 300-mile ultra. Pick your race and get week-by-week training built around it, with target paces from your own goal.</p>
+          </article>
+          <article class="card feat">
+            <span class="iconbox c4"><svg class="ic"><use href="icons.svg#i-map"/></svg></span>
+            <h3>Upload your route</h3>
+            <p class="does">Drop in a GPX file and get route-aware training insights, so you train for the hills and terrain you will actually race.</p>
+          </article>
+          <article class="card feat">
+            <span class="iconbox c1"><svg class="ic"><use href="icons.svg#i-pie"/></svg></span>
+            <h3>Fuel right</h3>
+            <p class="does">Nutrition guidance tuned to your mileage and race distance.</p>
+          </article>
+          <article class="card feat">
+            <span class="iconbox c8"><svg class="ic"><use href="icons.svg#i-cloud"/></svg></span>
+            <h3>Stay ahead of dehydration</h3>
+            <p class="does">Weather-aware hydration recommendations for every run.</p>
+          </article>
+          <article class="card feat">
+            <span class="iconbox c9"><svg class="ic"><use href="icons.svg#i-bag"/></svg></span>
+            <h3>Gear that fits your run</h3>
+            <p class="does">Recommendations tailored to your distance, weather and terrain.</p>
+          </article>
+          <article class="card feat">
+            <span class="iconbox c5"><svg class="ic"><use href="icons.svg#i-dumbbell"/></svg></span>
+            <h3>Strength that supports speed</h3>
+            <p class="does">Targeted strength work to help you stay strong and keep running.</p>
+          </article>
+          <article class="card feat">
+            <span class="iconbox c3"><svg class="ic"><use href="icons.svg#i-users"/></svg></span>
+            <h3>Never run alone</h3>
+            <p class="does">Get matched with partners and groups who run your pace, your way.</p>
+          </article>
+          <article class="card feat">
+            <span class="iconbox c6"><svg class="ic"><use href="icons.svg#i-mountain"/></svg></span>
+            <h3>Local Trails, Global Guru</h3>
+            <p class="does">Browse and share GPX routes other runners have mapped. Run like a local, wherever you are.</p>
+          </article>
+          <article class="card feat">
+            <span class="iconbox c7"><svg class="ic"><use href="icons.svg#i-trend"/></svg></span>
+            <h3>See your progress</h3>
+            <p class="does">Track how your training is going as you work toward race day.</p>
+          </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="ultras" class="section tight">
+    <div class="wrap">
+      <div class="center head">
+        <p class="eyebrow">Built for ultras</p>
+        <h2>Going long? Plan the whole race.</h2>
+        <p class="sub">Aid stations, cutoffs and a crew that is in on the plan, so the hardest hours are the best prepared.</p>
+      </div>
+
+      <div class="row">
+        <div class="copy">
+          <p class="step"><svg class="ic"><use href="icons.svg#i-flag"/></svg></p>
+          <h3>Plan an ultra like a pro</h3>
+          <p>Ultra-endurance race planning in one place: aid-station timing, cutoff-pace math and weather, so you know exactly where you stand against every cutoff before the start gun.</p>
+          <ul class="list"><li><svg class="ic"><use href="icons.svg#i-check"/></svg> Aid-station arrival times</li><li><svg class="ic"><use href="icons.svg#i-check"/></svg> Cutoff-pace math: the pace you need to stay ahead</li><li><svg class="ic"><use href="icons.svg#i-check"/></svg> Weather built into the plan</li></ul>
+        </div>
+        <svg class="art" viewBox="0 0 480 300" role="img" aria-label="Illustration: race profile with aid stations and a cutoff buffer">
+          <rect width="480" height="300" rx="22" fill="#eef7f6"/>
+          <rect x="28" y="30" width="424" height="240" rx="16" fill="#fff" stroke="#cfe0e2"/>
+          <text x="48" y="60" font-size="13" font-weight="700" fill="#12303a">Race plan: 100K</text>
+          <path d="M48 220 L48 190 C80 180 100 130 140 140 S200 200 240 165 S300 100 340 120 S400 175 432 150 L432 220 Z" fill="#cfe5e6"/>
+          <path d="M48 190 C80 180 100 130 140 140 S200 200 240 165 S300 100 340 120 S400 175 432 150" fill="none" stroke="#0f8b8d" stroke-width="3.5" stroke-linecap="round"/>
+          <line x1="48" y1="220" x2="432" y2="220" stroke="#dbe4e6"/>
+          <g fill="#f2a93b"><path d="M140 140v-30l18 7-18 7z"/><path d="M240 165v-30l18 7-18 7z"/><path d="M340 120v-30l18 7-18 7z"/></g>
+          <g stroke="#f2a93b" stroke-width="2.5"><line x1="140" y1="140" x2="140" y2="110"/><line x1="240" y1="165" x2="240" y2="135"/><line x1="340" y1="120" x2="340" y2="90"/></g>
+          <g font-size="11" fill="#526771" text-anchor="middle"><text x="140" y="238">Aid 1</text><text x="240" y="238">Aid 2</text><text x="340" y="238">Aid 3</text></g>
+          <rect x="250" y="40" width="190" height="26" rx="13" fill="#e3f5ea"/>
+          <text x="345" y="58" font-size="12" text-anchor="middle" font-weight="700" fill="#1d7a3d">Cutoff buffer: +1h 25m</text>
+        </svg>
+      </div>
+      <div class="row flip">
+        <div class="copy">
+          <p class="step"><svg class="ic"><use href="icons.svg#i-users"/></svg></p>
+          <h3>A crew that is in on the plan</h3>
+          <p>The Crew Companion is a shared plan, so a runner's crew knows where to be and when, and can support them through the hardest hours of the race.</p>
+          <ul class="list"><li><svg class="ic"><use href="icons.svg#i-check"/></svg> One plan, shared with your crew</li><li><svg class="ic"><use href="icons.svg#i-check"/></svg> Know when and where you will meet</li><li><svg class="ic"><use href="icons.svg#i-check"/></svg> Never run alone</li></ul>
+        </div>
+        <svg class="art" viewBox="0 0 480 300" role="img" aria-label="Illustration: a crew timeline with meeting points">
+          <rect width="480" height="300" rx="22" fill="#fdf6ea"/>
+          <rect x="28" y="30" width="424" height="240" rx="16" fill="#fff" stroke="#f0e2c6"/>
+          <text x="48" y="60" font-size="13" font-weight="700" fill="#12303a">Crew Companion</text>
+          <line x1="86" y1="86" x2="86" y2="236" stroke="#f0d49b" stroke-width="3"/>
+          <g>
+            <circle cx="86" cy="96" r="9" fill="#f2a93b"/><text x="108" y="94" font-size="12" font-weight="700" fill="#12303a">02:40  Aid 4</text><text x="108" y="112" font-size="12" fill="#526771">Crew meets you. Warm layer, hot soup.</text>
+            <circle cx="86" cy="156" r="9" fill="#0f8b8d"/><text x="108" y="154" font-size="12" font-weight="700" fill="#12303a">05:10  Aid 5</text><text x="108" y="172" font-size="12" fill="#526771">Headlamp swap. Refill flasks.</text>
+            <circle cx="86" cy="216" r="9" fill="#1b4965"/><text x="108" y="214" font-size="12" font-weight="700" fill="#12303a">07:30  Finish</text><text x="108" y="232" font-size="12" fill="#526771">Everyone is there.</text>
+          </g>
+          <g transform="translate(372 78)">
+            <circle cx="14" cy="14" r="14" fill="#0f8b8d"/><text x="14" y="19" font-size="12" text-anchor="middle" fill="#fff" font-weight="700">You</text>
+            <circle cx="46" cy="14" r="14" fill="#f2a93b"/><text x="46" y="19" font-size="11" text-anchor="middle" fill="#12303a" font-weight="700">Crew</text>
+          </g>
+        </svg>
+      </div>
+
+      <p class="honest featnote"><strong>Good to know:</strong> The Runners Guru is free to join and still in testing, so features may change. Illustrations on this page use sample numbers. Training, fueling and race plans are guidance, not medical or coaching advice, so listen to your body.</p>
+    </div>
+  </section>
+
+  <!-- BIOMETRIC FUELING PROJECT -->
+  <section id="fueling" class="section">
+    <div class="wrap">
+      <div class="panelbox sand">
+        <div class="split">
+          <div>
+            <p class="eyebrow">Now in testing</p>
+            <h2>The Biometric Fueling Project</h2>
+            <p class="lead-sm">Your own body data, turned into a clearer fueling plan.</p>
+            <p>Instead of relying only on general rules like &ldquo;60&ndash;90 g of carbs per hour&rdquo;, it combines continuous glucose readings, sweat sodium and sweat rate from a wearable sweat sensor, and heart rate and route data from a GPS watch. It then shows, hour by hour, how much carbohydrate, sodium and fluid matched what your body actually used during a training run.</p>
+            <p>No sensors? Start with a quick plan based on your body weight, time on feet and conditions, then replace those estimates with measured data as you train.</p>
+          </div>
+          <svg class="art" viewBox="0 0 480 320" role="img" aria-label="Illustration: hour-by-hour carbohydrate and sodium bars with a glucose line that shows a gap where data is missing">
+            <rect width="480" height="320" rx="22" fill="#fff"/>
+            <text x="28" y="44" font-size="14" font-weight="700" fill="#12303a">Hour by hour</text>
+            <text x="28" y="62" font-size="11" fill="#8a9aa1">Sample data</text>
+            <rect x="262" y="26" width="86" height="24" rx="12" fill="#e3f5ea"/><text x="305" y="42" font-size="11" text-anchor="middle" font-weight="700" fill="#1d7a3d">Measured</text>
+            <rect x="358" y="26" width="94" height="24" rx="12" fill="#fff" stroke="#9aa9af" stroke-dasharray="4 3"/><text x="405" y="42" font-size="11" text-anchor="middle" font-weight="700" fill="#526771">Estimated</text>
+            <line x1="46" y1="240" x2="452" y2="240" stroke="#dbe4e6"/>
+            <rect x="228" y="84" width="102" height="82" rx="8" fill="#f1f4f5" stroke="#cdd7da" stroke-dasharray="5 4"/>
+            <text x="279" y="104" font-size="10.5" text-anchor="middle" fill="#6c7a89" font-weight="700">No data: shown</text>
+            <text x="279" y="118" font-size="10.5" text-anchor="middle" fill="#6c7a89" font-weight="700">as a gap</text>
+            <g>
+              <rect x="74" y="170" width="18" height="70" rx="4" fill="#0f8b8d"/><rect x="94" y="196" width="10" height="44" rx="3" fill="#f2a93b"/>
+              <rect x="136" y="155" width="18" height="85" rx="4" fill="#0f8b8d"/><rect x="156" y="190" width="10" height="50" rx="3" fill="#f2a93b"/>
+              <rect x="198" y="162" width="18" height="78" rx="4" fill="#0f8b8d"/><rect x="218" y="194" width="10" height="46" rx="3" fill="#f2a93b"/>
+              <rect x="260" y="180" width="18" height="60" rx="4" fill="#0f8b8d"/><rect x="280" y="200" width="10" height="40" rx="3" fill="#f2a93b"/>
+              <rect x="322" y="152" width="18" height="88" rx="4" fill="#cfe5e6" stroke="#0f8b8d" stroke-dasharray="4 3"/><rect x="342" y="188" width="10" height="52" rx="3" fill="#fbe4bd" stroke="#f2a93b" stroke-dasharray="3 2"/>
+              <rect x="384" y="160" width="18" height="80" rx="4" fill="#cfe5e6" stroke="#0f8b8d" stroke-dasharray="4 3"/><rect x="404" y="192" width="10" height="48" rx="3" fill="#fbe4bd" stroke="#f2a93b" stroke-dasharray="3 2"/>
+            </g>
+            <path d="M92 138 L154 126 L216 134" fill="none" stroke="#2f62ad" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <g fill="#2f62ad"><circle cx="92" cy="138" r="4"/><circle cx="154" cy="126" r="4"/><circle cx="216" cy="134" r="4"/></g>
+            <path d="M340 128 L402 138" fill="none" stroke="#2f62ad" stroke-width="3" stroke-linecap="round" opacity=".55" stroke-dasharray="1 6"/>
+            <g font-size="11" fill="#526771" text-anchor="middle"><text x="92" y="258">Hr 1</text><text x="154" y="258">Hr 2</text><text x="216" y="258">Hr 3</text><text x="279" y="258">Hr 4</text><text x="341" y="258">Hr 5</text><text x="403" y="258">Hr 6</text></g>
+            <g font-size="11" fill="#12303a"><rect x="46" y="282" width="12" height="12" rx="3" fill="#0f8b8d"/><text x="64" y="292">Carbs</text><rect x="122" y="282" width="12" height="12" rx="3" fill="#f2a93b"/><text x="140" y="292">Sodium</text><rect x="212" y="287" width="22" height="3" rx="1.5" fill="#2f62ad"/><text x="240" y="292">Glucose</text></g>
+          </svg>
+        </div>
+
+        <div class="cards three tight-top">
+          <article class="card">
+            <span class="iconbox c4"><svg class="ic"><use href="icons.svg#i-gauge"/></svg></span>
+            <h3>Continuous glucose</h3>
+            <p>Continuous glucose readings show how your body responds to what you eat while you run.</p>
+          </article>
+          <article class="card">
+            <span class="iconbox c8"><svg class="ic"><use href="icons.svg#i-cloud"/></svg></span>
+            <h3>Sweat sodium and rate</h3>
+            <p>A wearable sweat sensor measures how much sodium and fluid you actually lose.</p>
+          </article>
+          <article class="card">
+            <span class="iconbox c1"><svg class="ic"><use href="icons.svg#i-timer"/></svg></span>
+            <h3>Heart rate and route</h3>
+            <p>Heart rate and route data from your GPS watch put the effort and the terrain in context.</p>
+          </article>
+        </div>
+
+        <h3 class="safety-h">Safety comes first</h3>
+        <ul class="list safety">
+          <li><svg class="ic"><use href="icons.svg#i-check"/></svg> Fluid suggestions never exceed your measured sweat losses.</li>
+          <li><svg class="ic"><use href="icons.svg#i-check"/></svg> Gaps in the data are shown as gaps, never guessed.</li>
+          <li><svg class="ic"><use href="icons.svg#i-check"/></svg> Every estimate is clearly labelled as an estimate.</li>
+        </ul>
+
+        <p class="fuel-status"><strong>Where it stands:</strong> the project is being built and tested on real races, working toward Cocodona 250 in May 2027. It will be shared with other runners only after review by a sports dietitian and legal advisors.</p>
+        <p class="fuel-note"><strong>This is a training and planning tool, not medical advice.</strong> Illustration uses sample data.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap band-inner">
+      <div>
+        <h2>Run far. Run together.</h2>
+        <p>Built by a runner, for runners. Our goal is simple: no runner has to plan, train or race alone.</p>
+      </div>
+      <a class="btn btn-primary" href="https://nepapower.github.io/TheRunnersGuru/" rel="noopener">Try it free</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span>&copy; 2026 D4Nepal Inc. A Maryland, USA corporation.</span>
+    <span class="flinks"><a href="products.html">Products</a> <a href="smb-insights.html">SMB Insights</a> <a href="the-runners-guru.html">The Runners Guru</a> <a href="#top">Back to top</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
