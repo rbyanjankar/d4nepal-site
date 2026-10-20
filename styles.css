@@ -49,7 +49,7 @@ nav a[aria-current="page"] { color: var(--teal-dark); font-weight: 700; }
   nav { width: 100%; display: flex; align-items: center; gap: 11px; overflow-x: auto; white-space: nowrap; padding: 6px 0 4px; scrollbar-width: none; }
   nav::-webkit-scrollbar { display: none; }
   nav a { margin-left: 0; font-size: .86rem; flex: none; }
-  nav a[href="index.html#who"] { display: none; }   /* reachable from the footer on phones */
+  nav a[href="about.html"] { display: none; }   /* reachable from the footer on phones */
   /* the call-to-action button sits on the logo row so it is never scrolled out of sight */
   .btn-small { position: absolute; top: 12px; right: 22px; margin-left: 0; }
 }
@@ -274,3 +274,22 @@ table.plantable td.ok { color: #1d7a3d; font-weight: 700; }
 @media (max-width: 560px) { .steps { grid-template-columns: repeat(2, 1fr); } .steps li::after { display: none; } }
 .futcards { margin-bottom: 1.6rem; }
 .futnote { max-width: 860px; }
+
+/* about page + learning program */
+.futcta { margin: 0 0 1.6rem; }
+.objective { text-align: center; margin: 0 auto 2rem; padding: 36px 32px; }
+.objective h3 { font-size: 1.35rem; margin: .2em auto .5em; max-width: 34em; }
+.objective p { color: var(--muted); max-width: 40em; margin: 0 auto; }
+.pillars { margin-bottom: 2rem; }
+.pillars .card p { font-size: .95rem; }
+.usecase { text-align: center; padding: 40px 32px; margin-bottom: 2rem; }
+.usecase h3 { font-size: 1.5rem; margin: .1em 0 .3em; }
+.usecase > p { color: var(--muted); max-width: 38em; margin: 0 auto 1.8rem; }
+.usecase .steps { margin-bottom: 1.4rem; }
+.steps.five { grid-template-columns: repeat(5, 1fr); }
+@media (max-width: 900px) { .steps.five { grid-template-columns: repeat(3, 1fr); } .steps.five li:nth-child(3n)::after { display: none; } }
+@media (max-width: 560px) { .steps.five { grid-template-columns: repeat(2, 1fr); } .steps.five li::after { display: none; } }
+.usecase .steps li { background: #fff; }
+.toollabel { font-size: .8rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--teal-dark) !important; margin: 0 0 .6rem !important; }
+.toolchips { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.toolchips li { background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: .35rem .9rem; font-size: .92rem; }
