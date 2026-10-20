@@ -49,6 +49,7 @@ nav a[aria-current="page"] { color: var(--teal-dark); font-weight: 700; }
   nav { width: 100%; display: flex; align-items: center; gap: 11px; overflow-x: auto; white-space: nowrap; padding: 6px 0 4px; scrollbar-width: none; }
   nav::-webkit-scrollbar { display: none; }
   nav a { margin-left: 0; font-size: .86rem; flex: none; }
+  nav a[href="index.html#who"] { display: none; }   /* reachable from the footer on phones */
   /* the call-to-action button sits on the logo row so it is never scrolled out of sight */
   .btn-small { position: absolute; top: 12px; right: 22px; margin-left: 0; }
 }
