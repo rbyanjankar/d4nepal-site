@@ -320,3 +320,8 @@ table.plantable td.ok { color: #1d7a3d; font-weight: 700; }
 .thread b { display: block; color: var(--teal-dark); }
 .thread span:not(.threadic) { color: var(--muted); font-size: .92rem; }
 @media (max-width: 560px) { .thread { flex-direction: column; text-align: center; padding: 14px 30px; gap: 6px; } .thread::before { left: 10px; } .thread::after { right: 10px; } .thread span:not(.threadic) { display: none; } }
+
+/* descriptor beside the product name, so visitors who do not read Nepali know what it is */
+nav a .navsub { font-weight: 400; color: var(--muted); font-size: .9em; }
+nav a[aria-current="page"] .navsub { color: var(--muted); }
+.hsub { display: block; font-size: .62em; font-weight: 600; color: var(--muted); margin-top: 2px; }
