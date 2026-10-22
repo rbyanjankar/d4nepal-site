@@ -325,3 +325,10 @@ table.plantable td.ok { color: #1d7a3d; font-weight: 700; }
 nav a .navsub { font-weight: 400; color: var(--muted); font-size: .9em; }
 nav a[aria-current="page"] .navsub { color: var(--muted); }
 .hsub { display: block; font-size: .62em; font-weight: 600; color: var(--muted); margin-top: 2px; }
+
+/* phones: the descriptor drops under the product name so the whole menu fits without scrolling */
+@media (max-width: 880px) {
+  nav { gap: 4px 8px; flex-wrap: wrap; overflow-x: visible; }   /* tighter, and wraps to a second row instead of scrolling */
+  nav a[href="tathya-guru.html"] { text-align: center; line-height: 1.15; }
+  nav a .navsub { display: block; font-size: .7rem; line-height: 1.1; margin-top: 1px; }
+}
