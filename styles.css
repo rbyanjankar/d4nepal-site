@@ -306,3 +306,17 @@ table.plantable td.ok { color: #1d7a3d; font-weight: 700; }
 .equation { font-weight: 700; color: var(--teal-dark); font-size: 1.15rem; margin: 0 auto 2rem; }
 .namenote { max-width: 40em; margin: 2rem auto 0; color: var(--muted); }
 .footer-inner .ftag { flex-basis: 100%; font-weight: 700; color: var(--teal-dark); letter-spacing: .02em; }
+
+/* breathing room between a heading and the numbered steps (the number badges stick out above the cards) */
+.futh + .steps { margin-top: 2.2rem; }
+
+/* communication runs through every stage: a band over the numbered steps */
+.thread { display: flex; align-items: center; justify-content: center; gap: 14px; position: relative; background: var(--mint); border: 1px solid #cfe8e5; border-radius: 18px; padding: 14px 52px; margin: 1.4rem 0 2.4rem; text-align: left; }
+.thread::before, .thread::after { position: absolute; top: 50%; transform: translateY(-50%); color: var(--amber); font-size: 1rem; line-height: 1; }
+.thread::before { content: "\25C0"; left: 20px; }
+.thread::after { content: "\25B6"; right: 20px; }
+.threadic { color: var(--teal-dark); font-size: 26px; line-height: 1; flex: none; }
+.thread p { margin: 0; line-height: 1.4; }
+.thread b { display: block; color: var(--teal-dark); }
+.thread span:not(.threadic) { color: var(--muted); font-size: .92rem; }
+@media (max-width: 560px) { .thread { flex-direction: column; text-align: center; padding: 14px 30px; gap: 6px; } .thread::before { left: 10px; } .thread::after { right: 10px; } .thread span:not(.threadic) { display: none; } }
