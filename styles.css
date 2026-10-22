@@ -298,3 +298,11 @@ table.plantable td.ok { color: #1d7a3d; font-weight: 700; }
 .mailnote { margin: 1rem auto 0; color: var(--muted); font-size: .95rem; max-width: 34em; }
 .footer-inner a { color: var(--muted); }
 .footer-inner a:hover { color: var(--teal-dark); }
+
+/* the name: four D's */
+.cards.four { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 960px) { .cards.four { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .cards.four { grid-template-columns: 1fr; } }
+.equation { font-weight: 700; color: var(--teal-dark); font-size: 1.15rem; margin: 0 auto 2rem; }
+.namenote { max-width: 40em; margin: 2rem auto 0; color: var(--muted); }
+.footer-inner .ftag { flex-basis: 100%; font-weight: 700; color: var(--teal-dark); letter-spacing: .02em; }
